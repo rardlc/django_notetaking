@@ -20,16 +20,11 @@ export default function NoteIndex({ collapsedParent, children, notes }) {
                         return (
                             <Link to={"/notes/" + note.id} className="notetakingWindow">
                                 <div className="notetakingHead">
-                                    {note.title}
+                                    <p>{note.title}</p>
                                 </div>
                                 <div className="notetakingBody">
-                                    {note.body}
-
+                                    <p>{note.body}</p>
                                 </div>
-                                <div className="notetakingFoot">
-                                    ...Read More
-                                </div>
-
                             </Link>)
                         // return (<Note data={note}></Note>)
                     }

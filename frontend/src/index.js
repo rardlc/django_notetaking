@@ -4,12 +4,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Note from './components/Note';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+    <App></App>
   </React.StrictMode>,
   document.getElementById('root')
 );
